@@ -1,0 +1,11 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/StudentHome.master" AutoEventWireup="true" CodeBehind="StudentProfile.master.cs" Inherits="WebApplication1.StudentProfile" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="StudentCphMenu" runat="server">
+    <br /><br />
+    <asp:HyperLink runat="server" Text="View"></asp:HyperLink>
+<br/><br/>
+    <asp:HyperLink runat="server" Text="Edit" NavigateUrl="~/studentEditProfile.aspx"></asp:HyperLink>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="StudenCphBody" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="cphBody"> </asp:ContentPlaceHolder>
+</asp:Content>

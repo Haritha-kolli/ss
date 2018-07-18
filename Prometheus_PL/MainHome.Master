@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainHome.master.cs" Inherits="PrometheusPL.MainHome" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="text-align:center;height:80px;background-color:#5c42f4;">
+            <br />
+            <asp:Label runat="server" Style="font-family:'Times New Roman', Times, serif;font-size:30px;color:white">Prometheus</asp:Label>
+            <br />
+            <div id="LogOut" Style="float:right">
+                <asp:HyperLink runat="server" Text="LogOut" Style="margin-right:30px;color:white"></asp:HyperLink>
+            </div>
+        </div>
+    
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
